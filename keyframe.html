@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    .main
+    {
+        background-color: aquamarine;
+        width: 100%;
+        height: 200px;
+
+    }
+    .child
+    {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(24, 35, 35);
+        animation-name: jayanth;
+        animation-duration: 4s;
+        position: absolute;
+        /* animation-iteration-count: 3;
+        animation-delay: 2s; */
+        animation-timing-function: ease-in-out;
+        /* animation-fill-mode: forwards; */
+        animation-direction:alternate;
+    }
+    @keyframes jayanth {
+      0%{
+        top: 250px;
+        left: 0px;
+      }
+      25%
+      {
+        top: 0px;
+        left: 0px;
+      }
+      50%{
+        top:150px;
+        left: 150px;
+      }
+
+        75%{
+            top: 0px;
+            left:250px;
+        }
+      
+      100%{
+        top: 250px;
+        left: 250px;
+      }
+
+        }
+    
+  </style>
+</head>
+<body>
+    <div class="main"><div class="child"></div></div>
+</body>
+</html>
